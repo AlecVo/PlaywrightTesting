@@ -62,7 +62,7 @@ test('Adding employees', async ({ page }) => {
   await page.getByLabel("Date In Service").fill("1/5/2023")
 
   //button add employee
-  // await page.getByRole('button', {name:'Save employee'}).click()
+  await page.getByRole('button', {name:'Save employee'}).click()
 });
 
 test('Adding a contract', async ({page}) => {
@@ -82,26 +82,25 @@ test('Adding a contract', async ({page}) => {
   //Rates
   await page.getByLabel("In Rate").type("5")
   await page.getByLabel("Out Rate").type("10")
-  // await page.getByRole('radio', { name: 'Hourly Standard' }).check()
-  // await page.getByRole('checkbox', { name: 'Daily Standard' }).check()
+  await page.locator('#mat-radio-6').getByText('Hourly Standard').click()
+  await page.getByText("Shift Hour Weekend").scrollIntoViewIfNeeded()
+  await page.getByText("Shift Hour Weekend").click()
 
   //Tenant
-  // await page.locator('#mat-radio-14').click()
+  await page.getByText("Team4Talent").click()
 
   //Employee
   // await page.getByRole("combobox", {name:"Employee"}).click()
   await page.getByLabel("Employee").click()
-  await page.getByText("Aaron De Coster").click()
+  await page.getByText("Aaron Sprangers").click()
 
   //Account Manager
   await page.getByLabel("Account manager").click()
-  await page.getByText("Igor Jemuce").click()
+  await page.getByRole('option', { name: 'Aaron Sprangers' }).getByText('Aaron Sprangers').click()
 
   //client info
   await page.getByLabel("Clientname").fill("kLant 3")
   await page.getByLabel("Contact Person").fill("Ibrahim")
-  await page.getByLabel('Signer *', { exact: true }).fill("waarom tester chrome")
-  await page.getByLabel("Email Signer").fill("Waarom is dit al ingevuld?")
   await page.getByLabel("Street").fill("dreikoningenstraat")
   await page.getByLabel("Number *", { exact: true }).fill("14")
   await page.getByLabel("Zipcode").fill("2550")
@@ -110,7 +109,7 @@ test('Adding a contract', async ({page}) => {
   await page.getByText("Albania - ALB").click()
 
   //button add Contract
-  // await page.getByRole('button', {name:'Save Contract'}).click()
+  await page.getByRole('button', {name:'Save Contract'}).click()
 });
 
 test('Adding a project', async ({page}) =>{
@@ -122,8 +121,10 @@ test('Adding a project', async ({page}) =>{
 
   //filling in form
   await page.getByLabel("Project name").fill("Project Phoenix")
-  await page.getByLabel("Tenant *").click()
-  await page.getByText("iets").click()
+  await page.getByRole('combobox', { name: 'Tenant' }).click()
+  await page.getByText("iets", { exact: true }).click()
+  await page.mouse.click(15,50)
+
   await page.getByLabel("Start Date").type("11/10/2005")
   await page.getByLabel("End Date").type("11/10/20019")
 
@@ -133,7 +134,7 @@ test('Adding a project', async ({page}) =>{
 })
 
 test('Adding a Login', async ({page}) =>{
-    //navigation to project page
+    //navigation to Logins page
     await page.getByText("Login").click()
     await page.getByText("menu").first().click()
     await page.getByText("Logins").first().click()
@@ -174,7 +175,8 @@ test('Adding a tenant', async ({page}) =>{
 
     //open dropdown
     await page.getByLabel("Signer").click()
-    await page.getByText("Annie Sels").click() // een dropdown moet sommige namen nog inladen dus moet ik ook een scrolldown gebruiken in dropdown om de onderste te selecteren
+    await page.getByText("Ann Wuyts").scrollIntoViewIfNeeded()
+    await page.getByText("Ann Wuyts").click() // een dropdown moet sommige namen nog inladen dus moet ik ook een scrolldown gebruiken in dropdown om de onderste te selecteren
 
     await page.getByLabel("Street").type("ZwaluwStraat")
     await page.getByLabel("House number").type("7")
@@ -187,4 +189,71 @@ test('Adding a tenant', async ({page}) =>{
 
     //button add tenant
     //await page.getByRole('button', { name: 'Save' }).click()
+})
+test('Adding a Carreer Track', async ({page}) =>{
+      //navigation to Tenant
+    await page.getByText("Login").click()
+    await page.getByText("menu").first().click()
+    await page.getByText("Career tracks").first().click()
+    await page.getByText("Add career track").click()
+
+    //filling in form
+    await page.getByLabel("Career track name").type("Unit")
+
+    //opening dropdown
+    await page.getByRole('combobox', { name: 'Tenant' }).click()
+    await page.getByText("Harvey Nash Brussel").click()
+    
+
+    //button add tenant
+    //await page.getByRole('button', { name: 'Save' }).click()
+})
+test('Adding a document', async ({page}) =>{
+      //navigation to Document
+      await page.getByText("Login").click()
+      await page.getByText("menu").first().click()
+      await page.getByText("Documents").first().click()
+      await page.getByText("Add Document").click()
+
+      //filling in form
+      await page.getByLabel("Document name").type("A document")
+      await page.getByLabel("Uploaded on").type("5/10/2023")
+
+      //opening dropdown
+      await page.getByRole('combobox', { name: 'Tenant' }).click()
+      await page.getByText("Harvey Nash Brussel").click()
+      await page.mouse.click(15,50)
+
+      //clicking on checkbox by pressing text
+      await page.locator('#mat-slide-toggle-1').getByText('Published').click()
+
+      //button add tenant
+      await page.getByRole('button', { name: 'Save' }).click()
+})
+test('Adding a news item', async ({page}) =>{
+  //navigation to Document
+  await page.getByText("Login").click()
+  await page.getByText("menu").first().click()
+  await page.getByText("News").first().click()
+  await page.getByText("Add News").click()
+
+  //filling in form
+  await page.getByLabel("Title").type("Testing news item")
+
+  //opening dropdown
+  await page.getByRole('combobox', { name: 'Tenant' }).click()
+  await page.getByText("Harvey Nash Brussel").click()
+  //dit zorgt ervoor dat men de checkbox deselect op een simpele manier
+  await page.mouse.click(15,50)
+
+  //opening dropdown
+  await page.getByRole('combobox', { name: 'User Types' }).click()
+  await page.getByText("Freelancer").click()
+  await page.mouse.click(15,50)
+
+  await page.getByText("Enter text here...").click()
+  await page.getByText("Enter text here...").type("Dit is het aller nieuwste news item")
+
+  //button add news
+  await page.getByRole('button', { name: 'Save' }).click()
 })
