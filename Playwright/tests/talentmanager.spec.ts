@@ -63,7 +63,7 @@ test('Adding employees', async ({ page }) => {
 
   //button add employee
   // await page.getByRole('button', {name:'Save employee'}).click()
-  });
+});
 
 test('Adding a contract', async ({page}) => {
   //navigation to contract page
@@ -112,3 +112,79 @@ test('Adding a contract', async ({page}) => {
   //button add Contract
   // await page.getByRole('button', {name:'Save Contract'}).click()
 });
+
+test('Adding a project', async ({page}) =>{
+  //navigation to project page
+  await page.getByText("Login").click()
+  await page.getByText("menu").first().click()
+  await page.getByText("Projects").first().click()
+  await page.getByText("Add Project").click()
+
+  //filling in form
+  await page.getByLabel("Project name").fill("Project Phoenix")
+  await page.getByLabel("Tenant *").click()
+  await page.getByText("iets").click()
+  await page.getByLabel("Start Date").type("11/10/2005")
+  await page.getByLabel("End Date").type("11/10/20019")
+
+  //button add Project
+  await page.getByText("Save").click()
+
+})
+
+test('Adding a Login', async ({page}) =>{
+    //navigation to project page
+    await page.getByText("Login").click()
+    await page.getByText("menu").first().click()
+    await page.getByText("Logins").first().click()
+    await page.getByText("Add Login").click()
+
+    //General info
+    await page.getByLabel('Last name').type("Van Oosterwijck")
+    await page.getByLabel('First name').type("Alec")
+    await page.getByLabel('Email').type("email@mail.com")
+    //Dropdown click
+    await page.getByLabel('Type').click()
+    await page.getByText("Freelancer").click()
+    //Dropdown click
+    await page.getByLabel('Tenant').click()
+    await page.getByText('Talent2Test', { exact: true }).click()
+    //Dropdown click
+    await page.getByLabel('Employee').click()
+    await page.getByText('Alexander De Prest').click()
+
+    //Hier heb ik nog problemen bij het selecteren van een checkbox, isChecked werkt maar dan is het niet gechecked
+    //await page.locator('#myPortalUser-input').click()
+
+    //button add Login
+    //await page.getByText(" Save Login ").click()
+
+})
+test('Adding a tenant', async ({page}) =>{
+    //navigation to Tenant
+    await page.getByText("Login").click()
+    await page.getByText("menu").first().click()
+    await page.getByText("Tenants").first().click()
+    await page.getByText("Add Tenant").click()
+
+    //Tenant Details
+    await page.getByLabel("Tenant name").type("Is iets anders")
+    await page.getByLabel("Tenant short name").type("IIA")
+    await page.getByLabel("Tenant accent color").type("#fb8500")
+
+    //open dropdown
+    await page.getByLabel("Signer").click()
+    await page.getByText("Annie Sels").click() // een dropdown moet sommige namen nog inladen dus moet ik ook een scrolldown gebruiken in dropdown om de onderste te selecteren
+
+    await page.getByLabel("Street").type("ZwaluwStraat")
+    await page.getByLabel("House number").type("7")
+    await page.getByLabel("Zipcode").type("2590")
+    await page.getByLabel("City").type("Berlaar")
+
+    //open dropdown
+    await page.getByLabel("Country").click()
+    await page.getByText("Albania - ALB").click()
+
+    //button add tenant
+    //await page.getByRole('button', { name: 'Save' }).click()
+})
