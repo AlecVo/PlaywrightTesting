@@ -231,7 +231,7 @@ test('Adding a document', async ({page}) =>{
       await page.getByRole('button', { name: 'Save' }).click()
 })
 test('Adding a news item', async ({page}) =>{
-  //navigation to Document
+  //navigation to news
   await page.getByText("Login").click()
   await page.getByText("menu").first().click()
   await page.getByText("News").first().click()
@@ -256,4 +256,54 @@ test('Adding a news item', async ({page}) =>{
 
   //button add news
   await page.getByRole('button', { name: 'Save' }).click()
+})
+//Settings page
+test('Adding a Asset Category', async ({page}) =>{
+  //navigation to Asset Category
+  await page.getByText("Login").click()
+  await page.getByText("menu").first().click()
+  await page.getByText("Settings").first().click()
+  await page.getByText("Add asset category").click()
+
+  //filling in form
+  await page.getByLabel("Name").type("New category")
+  await page.getByLabel("Technical code").type("111011101110")
+
+  //opening dropdown
+  await page.getByRole('combobox', { name: 'Icon' }).click()
+  await page.getByText("star").click()
+
+  await page.getByText("No").click()
+
+  //button add asset
+  await page.getByRole('button', { name: 'Save & close' }).click()
+})
+test('Adding a Transaction Types', async ({page}) =>{
+  //navigation to Document
+  await page.getByText("Login").click()
+  await page.getByText("menu").first().click()
+  await page.getByText("Settings").first().click()
+  await page.getByText("Transaction Types").click()
+  await page.getByText("Add transaction type").click()
+
+  // filling in form
+  await page.getByLabel("Type name").type("A transaction type")
+
+  // button add Transaction type
+  //await page.getByRole('button', { name: 'Save & close' }).click()
+})
+test('Follow Up Contact Types', async ({page}) =>{
+  //navigation to Document
+  await page.getByText("Login").click()
+  await page.getByText("menu").first().click()
+  await page.getByText("Settings").first().click()
+  await page.getByText("Follow Up Contact Types").click()
+  await page.getByText("Add follow up contact type ").click()
+
+  // filling in form
+  await page.getByLabel("Name").type("Stage opvolging")
+  await page.getByLabel("Accent color").type("#FF9800")
+
+  // button add Transaction type
+  await page.getByRole('button', { name: 'Save & close' }).click()
 })
