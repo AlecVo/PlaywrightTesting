@@ -19,7 +19,7 @@ test('Adding employees', async ({ page }) => {
   //Personal info
   await page.getByLabel('Last Name').fill('Van Oosterwijck')
   await page.getByLabel('First Name').fill('Alec')
-  await page.getByLabel('birthdate').fill('11/10/2002')
+  await page.getByLabel('birthdate').fill('29/2/2000')
 
   //opening the dropdown and selecting an item
   await page.getByLabel('Nationality').click()
@@ -59,7 +59,7 @@ test('Adding employees', async ({ page }) => {
   await page.getByLabel("Tenant").click()
   await page.getByText("Harvey Nash Brussel").click()
 
-  await page.getByLabel("Date In Service").fill("1/5/2023")
+  await page.getByLabel("Date In Service").type("1/5/2023")
 
   //button add employee
   await page.getByRole('button', {name:'Save employee'}).click()
