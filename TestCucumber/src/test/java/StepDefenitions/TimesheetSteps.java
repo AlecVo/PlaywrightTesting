@@ -1,28 +1,29 @@
 package StepDefenitions;
-import io.cucumber.datatable.DataTable;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import io.cucumber.java.BeforeAll;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
+import java.time.LocalDate;
 
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.WebDriverConditions.url;
 
 public class TimesheetSteps {
+
+
+    // Method to get number of days in month
+    public static int getNumberOfDaysInMonth(int year,int month)
+    {
+        // LocalDate object
+        LocalDate date = LocalDate.of(year, month, 1);
+        int days = date.lengthOfMonth();
+
+        return days;
+    }
     WebDriver driver;
     @Given(": I am on the Create timesheet page")
     public void i_am_on_the_create_timesheet_page() {
@@ -33,6 +34,10 @@ public class TimesheetSteps {
         $(By.xpath("//*[@id=\"content\"]/div/div/div/div[1]/div[2]/div[1]/div/div[2]/a")).click();
         $(By.xpath("//*[@id=\"selectContractsList\"]/div/div/div[3]/button[2]")).click();
 
+        WebElement Date = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div/div/div/div/div/div[1]/div/div[2]/table/thead/tr[1]/th"));
+        var date = Date.getAttribute("text");
+        System.out.println("Month is :" + date);
+
 
 
     }
@@ -41,8 +46,6 @@ public class TimesheetSteps {
         if ($(By.className("month-header")).getValue() == "July 2023") {
             $(By.xpath("/html/body/div/div[3]/div/div/div/div/div/div/div[1]/div/div[2]/table/tbody/tr[1]/td[2]/select")).click();
             $(By.linkText("Daily standard")).click();
-        } else {
-            driver.quit();
         }
     }
     @When(": I press save")

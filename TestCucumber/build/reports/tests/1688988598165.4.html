@@ -1,0 +1,95 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T4T - IdentityServer4</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon-t4t.ico">
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+
+    <div class="container body-content">
+        
+<div class="login-page">
+
+    
+
+    <div class="row">
+
+            <div class="container">
+                <div class="panel loginForm">
+                    <h1>
+                        Welcome back.
+                    </h1>
+
+                    <img src="/logonew.jpg">
+
+                    <div class="panel-body pull-left">
+                        <form action="" method="post">
+                            <input type="hidden" id="ReturnUrl" name="ReturnUrl" value="/connect/authorize/callback?client_id=t4t-myportal&amp;redirect_uri=https%3A%2F%2Ft4t-myportal-uat.azurewebsites.net%2Foidc-callback&amp;response_type=token%20id_token&amp;scope=openid%20email%20roles%20offline_access%20profile%20t4t-myportal-timesheets%20t4t-myportal&amp;state=3e906fc441214b649d4c73ac12047a51&amp;nonce=907f99a1885f42f3b9e7e46e45cb7189">
+
+                            <fieldset>
+                                <div>
+                                        <div class="border center-block">
+                                            <ul class="list-inline center-block">
+                                                    <p>
+                                                        <a class="btn btn-default" href="/account/ExternalLogin?provider=Microsoft&amp;returnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dt4t-myportal%26redirect_uri%3Dhttps%253A%252F%252Ft4t-myportal-uat.azurewebsites.net%252Foidc-callback%26response_type%3Dtoken%2520id_token%26scope%3Dopenid%2520email%2520roles%2520offline_access%2520profile%2520t4t-myportal-timesheets%2520t4t-myportal%26state%3D3e906fc441214b649d4c73ac12047a51%26nonce%3D907f99a1885f42f3b9e7e46e45cb7189">
+                                                                <img class="ms-logo" src="/mslogo.png">
+                                                                <label class="btn-label">Sign in with Microsoft  </label>                                    
+                                                            </a>
+                                                            </p>
+                                            </ul>
+                                        </div>
+                                </div>
+                                <div class="border center-block">
+                                    <h4 class="font-weight-bold">----------- Or -----------</h4>
+                                </div>
+                                <div>
+                                    <p>
+                                        <a class="btn btn-info center-block width-170 t4t-color" data-toggle="collapse" href="#loginWithPassword" role="button" aria-expanded="true" aria-controls="loginWithPassword">
+                                            Sign in with username
+                                        </a>
+                                    </p>
+                                    <div class="collapse in" id="loginWithPassword" aria-expanded="true" style="">
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Username" type="text" data-val="true" data-val-required="The Username field is required." id="Username" name="Username" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password" autocomplete="off" data-val="true" data-val-required="The Password field is required." id="Password" name="Password">
+                                        </div>
+                                            <div class="form-group login-remember">
+                                                <label for="RememberLogin">
+                                                    <input type="checkbox" data-val="true" data-val-required="The RememberLogin field is required." id="RememberLogin" name="RememberLogin" value="true">
+                                                    <strong>Remember My Login</strong>
+                                                </label>
+                                            </div>
+
+                                        <div class="form-group">
+                                            <button class="btn btn-primary t4t-color" name="button" value="login">Login</button>
+                                            <a class="btn btn-default" value="cancel" role="button" data-toggle="collapse" href="#loginWithPassword" aria-controls="loginWithPassword" aria-expanded="true">Cancel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8MJQmMYB5edCkyLUwOI9SxnPSKQd58xEj4OfyV_mz2PE4kTMMsRroijdw2n4ZJDSJM0odcICq6d0OIDRNXfhp8VruPFz-Qv8akDwfUtqwzUo3I4cHUN5_YSGnnpUUIeRk8zS8vo_c-_uxj0YLeBQNJs"><input name="RememberLogin" type="hidden" value="false"></form>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+    </div>
+    
+    
+</div>
+    </div>
+
+    <script src="/lib/jquery/jquery.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.js"></script>
+    
+
+
+</body></html>
