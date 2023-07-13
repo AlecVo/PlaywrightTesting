@@ -19,6 +19,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.WebDriverConditions.url;
 public class NavigationSteps {
     WebDriver driver;
+
     @Before
     public void Login(){
 
@@ -32,6 +33,7 @@ public class NavigationSteps {
     }
     @Given(": I am on the homepage")
     public void i_am_on_the_homepage() {
+
         webdriver().shouldHave(url("https://t4t-myportal-uat.azurewebsites.net/"));
     }
     @When(": I click on a navigation {string}")
@@ -43,6 +45,7 @@ public class NavigationSteps {
     public void i_will_be_navigated_to_that(String string) {
         var link = "https://t4t-myportal-uat.azurewebsites.net/";
         link = link + string;
+
         webdriver().shouldHave(url(link));
         driver.quit();
     }
