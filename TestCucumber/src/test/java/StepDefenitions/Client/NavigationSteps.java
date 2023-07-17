@@ -1,4 +1,4 @@
-package StepDefenitions;
+package StepDefenitions.Client;
 
 import com.codeborne.selenide.selector.ByText;
 import io.cucumber.datatable.DataTable;
@@ -28,7 +28,7 @@ public class NavigationSteps {
 
         open("https://t4t-myportal-uat.azurewebsites.net/");
         $(By.linkText("Sign in with username")).click();
-        $(By.id("Username")).setValue("Talent2TestEmployee");
+        $(By.id("Username")).setValue("t4temployee");
         $(By.id("Password")).setValue("Test1234!");
         $(By.name("button")).click();
     }
@@ -51,9 +51,13 @@ public class NavigationSteps {
         driver.quit();
     }
     @After
-    public void logout(){
+    private void logout(){
+        //selecteert de dropdown waar uitloggen staat
         $(By.cssSelector(".dropdown-toggle")).click();
+        //klikt op de log uit buttons
         $(By.cssSelector(".pe-7s-power")).click();
     }
+
+
 
 }

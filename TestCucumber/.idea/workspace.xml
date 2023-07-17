@@ -5,19 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5858ff8-f80d-4f6e-b440-5934e9c6c43c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefenitions/NavigationSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefenitions/NavigationSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefenitions/TimesheetSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefenitions/TimesheetSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/CarreerTracks.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CarreerTracks.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Timesheet.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Timesheet.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefenitions/NavigationSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefenitions/NavigationSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefenitions/TimesheetSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepDefenitions/TimesheetSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Timesheet.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Timesheet.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefenitions/Client/LoginStepDefenition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefenitions/Client/TimesheetSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefenitions/NewsStepsDefenition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Client/Navigation.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/News.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefenitions/CarreerTrackStepDefenitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefenitions/Client/CarreerTrackStepDefenitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefenitions/LoginSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefenitions/NavigationSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefenitions/Client/NavigationSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefenitions/TimesheetSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/CarreerTracks.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Client/CareerTracks.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Client/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Navigation.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Timesheet.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Client/Timesheet.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefenitions/CarreerTrackStepDefenitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefenitions/LoginSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefenitions/NavigationSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefenitions/TimesheetSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRunner/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestRunner/TestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/CarreerTracks.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Login.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Navigation.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Timesheet.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +65,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Talant-HuurPC14/Desktop/PlaywrightTesting/TestCucumber&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -62,15 +75,21 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: I want to be able to create Timesheets">
-    <configuration name="Feature: Navigation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Talant-HuurPC14\Desktop\PlaywrightTesting\TestCucumber\src\test\resources\features" />
+      <recent name="C:\Users\Talant-HuurPC14\Desktop\PlaywrightTesting\TestCucumber\src\test\resources\features\Client" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Feature: News (1)">
+    <configuration name="Feature: Login (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Navigation.feature" />
-      <option name="GLUE" value="StepDefenitions" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Client/Login.feature" />
+      <option name="GLUE" value="StepDefenitions.Client" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="GherkinCucumberExampoles" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Navigation" />
+      <option name="SUGGESTED_NAME" value="Feature: Login" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -82,14 +101,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: Timesheet" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: News (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Timesheet.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/News.feature" />
       <option name="GLUE" value="StepDefenitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="GherkinCucumberExampoles" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Timesheet" />
+      <option name="SUGGESTED_NAME" value="Feature: News" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -101,15 +120,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: I want to be able to create Timesheets" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: News" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Timesheet.feature" />
-      <option name="GLUE" value="StepDefenitions" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Admin/News.feature" />
+      <option name="GLUE" value="StepDefenitions.Client" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="GherkinCucumberExampoles" />
-      <option name="NAME_FILTER" value="^I want to be able to create Timesheets$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^I want to be able to create Timesheets$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: I want to be able to create Timesheets" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: News" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: I want to be able to login to the homepage." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Client/Login.feature" />
+      <option name="GLUE" value="StepDefenitions.Client" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="GherkinCucumberExampoles" />
+      <option name="NAME_FILTER" value="^I want to be able to login to the homepage\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^I want to be able to login to the homepage\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: I want to be able to login to the homepage." />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: I want to be able to move around the website -  - Example n°1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Client/Navigation.feature:11" />
+      <option name="GLUE" value="StepDefenitions.Client" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="GherkinCucumberExampoles" />
+      <option name="NAME_FILTER" value="^I want to be able to move around the website$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^I want to be able to move around the website$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: I want to be able to move around the website -  - Example n°1" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -134,9 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: I want to be able to create Timesheets" />
-        <item itemvalue="Cucumber Java.Feature: Timesheet" />
-        <item itemvalue="Cucumber Java.Feature: Navigation" />
+        <item itemvalue="Cucumber Java.Feature: News (1)" />
+        <item itemvalue="Cucumber Java.Feature: News" />
+        <item itemvalue="Cucumber Java.Feature: Login (1)" />
+        <item itemvalue="Cucumber Java.Scenario: I want to be able to login to the homepage." />
+        <item itemvalue="Cucumber Java.Scenario: I want to be able to move around the website -  - Example n°1" />
       </list>
     </recent_temporary>
   </component>
@@ -157,17 +217,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="NONE" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/StepDefenitions/TimesheetSteps.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TestCucumber$Feature__Timesheet.ic" NAME="Feature: Timesheet Coverage Results" MODIFIED="1689254845755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

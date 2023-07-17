@@ -1,4 +1,4 @@
-package StepDefenitions;
+package StepDefenitions.Client;
 import com.codeborne.selenide.selector.ByText;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.After;
